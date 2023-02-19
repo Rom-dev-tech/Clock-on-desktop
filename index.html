@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Clock on desktop</title>
+
+    <!-- favicon -->
+    <link
+      href="./favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      type="image/png"
+      href="./favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+    />
+    <link
+      type="image/png"
+      href="./favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+    />
+    <link href="./favicon/site.webmanifest" rel="manifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- styles -->
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="clock">
+      <div class="container">
+        <time class="clock-time clock-js"></time>
+        <h1 class="clock-title">
+          <span class="greeting-js"></span>
+          <span class="name-js" contenteditable="true"></span>
+        </h1>
+
+        <h2 class="clock-botton-title">What Is Your Focus For Today?</h2>
+        <h3 class="focus-js" contenteditable="true"></h3>
+      </div>
+    </section>
+
+    <section class="todos">
+      <div class="container">
+        <h2 class="todos-title">TODO list on to day</h2>
+        <form class="todos-form">
+          <input
+            class="todos-input"
+            type="text"
+            placeholder="Додати завдання"
+          />
+          <button class="todos-add-btn" type="submit">Додати</button>
+        </form>
+        <ul class="todos-list">
+          <!-- list items will be added here -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- js -->
+    <script src="./js/clock-on-desktop.js" type="module"></script>
+    <script src="./js/todo.js" type="module"></script>
+  </body>
+</html>
